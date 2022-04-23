@@ -29,12 +29,14 @@ public class Members {
         }
     }
 
-    public static void printPersons(
+    public static String printPersons(
             List<Person> members, CheckPerson tester) {
+        String output = "";
         for (Person p : members) {
             if (tester.test(p)) {
-                p.toString();
+                output += p;
             }
         }
+        return output;
     }
 }
