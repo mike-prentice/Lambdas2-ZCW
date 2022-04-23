@@ -1,10 +1,15 @@
+
 import java.util.List;
+
+import Person.Person;
+
+
 
 public class Members {
 
     public List<Person> members;
 
-    public add(Person p) {
+    public void add(Person p) {
         members.add(p);
     }
     public static void printPersonsOlderThan(List<Person> roster, int age) {
@@ -26,9 +31,9 @@ public class Members {
 
     public static void printPersons(
             List<Person> members, CheckPerson tester) {
-        for (Person p : roster) {
+        for (Person p : members) {
             if (tester.test(p)) {
-                p.printPerson();
+                p.toString();
             }
         }
     }
